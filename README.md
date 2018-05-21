@@ -5,17 +5,19 @@ Routes:
 
 2. /food/get/brand?brand=macdonalds
 
-3. /food/all
+3. /food/get/id?id=1258744
+
+4. /food/all
   Show all food items in MongoDB
 
-4. /food//delete/:id
+5. /food//delete/:id
   remove food item from mongodb by food_id
 
-5. /profile/show
+6. /profile/show
   show profile data in MongoDB
 
-6. /save/profile
+7. /save/profile
   save profile data
 
-7. /fatsecret/:item
+8. /fatsecret/:item
   show max 50 items with 'item' in the food_name
