@@ -10,6 +10,12 @@ var port     = configPort.port;
 var mongoose = require('mongoose');
 
 
+var cors = require('cors');
+
+var corsOptions = {
+  origin: 'http://www.digitalfields.co.za',
+  optionsSuccessStatus: 200
+}
 
 var morgan       = require('morgan');
 var cookieParser = require('cookie-parser');
@@ -42,6 +48,7 @@ const food = require('./controllers/food');
 
 // set up our express application
 // app.use(morgan('dev')); // log every request to the console
+app.use(cors(corsOptions));
 app.use(bodyParser.json()); // get information from html forms
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/profile', profile);

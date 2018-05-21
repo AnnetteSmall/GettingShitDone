@@ -19,11 +19,21 @@ router.get('/get/item?', function(req, res){ //http://localhost:8080/food/get/it
   Food.find({food_name:regexp }, function(err, food){
     if(err) throw err;
     console.log("found: ", food);
+    console.log("nr items found : ", food.length);
     res.send(food);
   });
 });
 
-router.get('/get/brand?', function(req, res){ 
+router.get('/get/id?', function(req, res){ //http://localhost:8080/food/get/item?item=peach
+  var itemID = req.query.id;
+  Food.find({food_id:itemID }, function(err, food){
+    if(err) throw err;
+    console.log("found: ", food);
+    res.send(food);
+  });
+});
+
+router.get('/get/brand?', function(req, res){
   var item = req.query.brand;
   var regexp = new RegExp(req.query.brand, "i");
   console.log(' Looking for item : ', regexp);
