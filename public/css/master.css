@@ -1,0 +1,274 @@
+/* universal selector : to start on a blank canvase. make sure all starts are catred for */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* once set on body => now specify that this needs to be inherited by child elements */ }
+
+/* this is the root */
+html {
+  font-size: 62.5%;
+  /* root size so we can use rem for the rest of the styles (default 16px) use % to allow user to still be able to increase font size*/ }
+
+body {
+  box-sizing: border-box;
+  /* this will not be inherited autmatically - needs to specify in univeral selector */
+  background-color: #F6F4F6; }
+
+.card {
+  display: inline-block;
+  border: 1px solid #C1B8C3;
+  border-radius: 4px;
+  width: 22vw;
+  margin-left: 7.5%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  background-color: #fff; }
+  .card__icon {
+    font-size: 10rem;
+    text-align: center;
+    margin-top: 5%; }
+    .card__icon i {
+      background-image: radial-gradient(#C1B8C3, #908394);
+      -webkit-background-clip: text;
+      color: transparent; }
+  .card__header {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 4%; }
+
+a {
+  text-decoration: none;
+  color: #908394; }
+
+.form {
+  border: 2px solid #908394;
+  margin-top: 5px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: .8rem;
+  background: radial-gradient(#fff 80%, #C1B8C3);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .form--row {
+    display: block;
+    margin-left: 5rem;
+    padding: 3rem;
+    text-align: center; }
+  .form--input {
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 4rem;
+    color: #655C68;
+    text-align: center;
+    font-family: "Handlee", cursive; }
+
+select {
+  background-color: #fff; }
+
+.btn {
+  padding: 1rem 3rem;
+  font-size: 4rem;
+  font-family: "Shadows Into Light", cursive;
+  border-radius: 2rem;
+  color: #3A353B;
+  box-shadow: 1.5rem 1.5rem 2rem rgba(0, 0, 0, 0.15); }
+  .btn-submit {
+    background: radial-gradient(#F6F4F6, #908394);
+    color: #3A353B;
+    font-weight: bold;
+    letter-spacing: .2rem; }
+
+.food--card {
+  display: inline-block;
+  width: 45%; }
+
+.error--box {
+  margin: auto;
+  display: block;
+  border: 1px solid red;
+  background: radial-gradient(#F6F4F6, #f0dbdb);
+  width: 50%;
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-bottom: .5rem; }
+  .error--box-msg {
+    text-transform: capitalize;
+    font-family: "Cinzel", serif;
+    font-size: 2rem;
+    color: red;
+    font-weight: 600; }
+
+.nav--feature {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: -8px;
+  backface-visibility: hidden; }
+
+.nav--tag {
+  display: inline-block;
+  padding: 0 1rem;
+  background-color: #C1B8C3;
+  border: 2px solid #908394;
+  border-radius: 1rem 1rem 0 0;
+  margin-right: 3px;
+  box-shadow: 1.5rem 0 3rem rgba(0, 0, 0, 0.15);
+  background: radial-gradient(#C1B8C3 60%, #908394); }
+  .nav--tag:active,
+  .nav--tag ::after,
+  .nav--tag :link,
+  .nav--tag :visited {
+    background: radial-gradient(#F6F4F6 70%, #C1B8C3); }
+  .nav--tag-text {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+
+.page {
+  border: 2px solid #908394;
+  margin-top: 5px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: .8rem;
+  background-color: #fff;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .page--row {
+    display: block;
+    margin-left: 5rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    text-align: left; }
+    .page--row-ol_item {
+      border-bottom: 1px solid #C1B8C3;
+      padding: 1rem; }
+
+.container {
+  margin: 4rem 4rem;
+  border: 1px solid #C1B8C3;
+  padding-bottom: 4rem; }
+
+.header__textBox {
+  text-align: center; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-top-small {
+  margin-top: 1.5rem; }
+
+.u-margin-top-medium {
+  margin-top: 4rem; }
+
+.u-margin-top-big {
+  margin-top: 8rem; }
+
+.u-centre {
+  text-align: center; }
+
+.u-padding-bottom-small {
+  padding-bottom: 5px; }
+
+body {
+  font-style: normal;
+  color: #3A353B; }
+
+.heading-primary {
+  vertical-align: middle;
+  text-transform: uppercase; }
+  .heading-primary--main {
+    display: block;
+    font-family: "Bookman Old Style";
+    font-size: 8rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+    background-image: radial-gradient(#908394, #3A353B);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .heading-primary--sub {
+    font-family: "Kalam", cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #908394;
+    display: block;
+    letter-spacing: 1.8rem;
+    border-bottom: 2px solid #908394;
+    margin: 0 5rem; }
+  .heading-primary--card {
+    display: block;
+    font-family: "Bookman Old Style";
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    color: #655C68; }
+
+.heading {
+  padding-left: 5%;
+  position: relative; }
+  .heading-feature {
+    font-family: "Cinzel", serif;
+    font-size: 5rem;
+    font-weight: 300;
+    text-transform: capitalize; }
+    .heading-feature--fsub {
+      position: absolute;
+      top: 3.5rem;
+      left: 10%;
+      text-transform: lowercase;
+      font-family: "Shadows Into Light", cursive;
+      font-size: 3rem;
+      font-weight: 100;
+      letter-spacing: .3rem; }
+    .heading-feature--home {
+      position: absolute;
+      left: 90%;
+      top: 20%;
+      font-size: 5rem;
+      color: #655C68; }
+
+.page {
+  font-family: "Cinzel", serif;
+  color: #908394; }
+  .page--header {
+    padding: 1rem;
+    font-size: 5rem;
+    font-weight: 500; }
+  .page--row {
+    padding: 0;
+    border-bottom: 1px solid #C1B8C3;
+    margin-right: 5rem;
+    font-size: 3rem;
+    font-weight: 300; }
+    .page--row-ol_item {
+      text-transform: capitalize;
+      font-family: "Handlee", cursive;
+      color: #908394;
+      font-weight: 300; }
+  .page--text {
+    display: inline-block; }
+    .page--text-info {
+      color: #655C68;
+      display: inline-block;
+      font-family: "Handlee", cursive;
+      padding-left: 2rem; }
+
+.nav--tag-text {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 2.5rem;
+  font-weight: 100;
+  letter-spacing: .2rem;
+  color: #655C68; }
+
+.form--fieldname {
+  color: #655C68;
+  font-family: "Bookman Old Style";
+  font-size: 4rem; }

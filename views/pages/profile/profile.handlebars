@@ -1,0 +1,64 @@
+
+{{> _profileNav}}
+
+
+
+<div name="addNewUserForm" class="form">
+  <form  class="form--add" action="/profile" method="post">
+
+    <div class="form--row error">
+      {{#each errors}}
+      <div class="error--box">
+        <div class="error--box-msg">
+          <p>{{text}}</p>
+        </div>
+      </div>
+      {{else}}
+      {{/each}}
+    </div>
+
+    <!-- <div class="form--row">
+      <label for="markDefaultUser" class="form--input">Default User:
+        <input type="checkbox" class="form--input"  ></input>
+      </label>
+    </div> -->
+    <div class="form--row">
+      <label for="newProfileName" class="form--fieldname">Name:
+        <input type="text" name="newProfileName" class="form--input" required></input>
+      </label>
+    </div>
+    <div class="form--row">
+      <label for="newProfiledob" class="form--fieldname">Date of Birth
+      <input type="date" name="newProfiledob" class="form--input" required></input>
+    </div>
+    <div class="form--row">
+      <label for="newProfileGender" class="form--fieldname">Gender
+        <select name="newProfileGender" class="form--input">
+          <option value="" class="form--input">Select</option>
+          <option value="female" class="form--input">Female</option>
+          <option value="male" class="form--input">Male</option>
+        </select>
+      </label><br>
+    </div>
+    <div class="form--row">
+      <label for="newProfileActivity" class="form--fieldname">Activity
+        <select name="newProfileActivity" class="form--input">
+          <option name="newProfileActivity"  value="" class="form--input">Select</option>
+          <option name="newProfileActivity"  value="sedentary" class="form--input">Sedentary</option>
+          <option name="newProfileActivity"  value="lightlyActive" class="form--input">Lightly Active</option>
+          <option name="newProfileActivity"  value="moderatelyActive" class="form--input">Moderately Active</option>
+          <option name="newProfileActivity"  value="veryActive" class="form--input">Very Active</option>
+          <option name="newProfileActivity"  value="extraActive" class="form--input">Extra Active</option>
+        </select>
+      </label><br>
+    </div>
+    <div class="form--row">
+      <label for="newProfileHeight" class="form--fieldname">Height
+      <input type="number" name="newProfileHeight" class="form--input"  required> cm</label><br>
+    </div>
+    <div class="form-row u-centre u-margin-bottom-medium">
+      <button type="submit" class="btn btn-submit">Submit</button>
+    </div>
+
+  </form>
+</div>

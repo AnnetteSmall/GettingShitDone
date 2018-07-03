@@ -1,0 +1,123 @@
+body {
+  font-style: normal;
+  color: $color-5;
+  // font-family: "Bookman Old Style";
+}
+
+
+.heading-primary {
+  vertical-align: middle;
+  text-transform: uppercase;
+  &--main {
+    // color: $color-5;
+    display:block;
+    font-family: $font-primary-heading;
+    font-size: 8rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+    background-image: radial-gradient($color-3, $color-5);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  &--sub {
+    font-family: $font-primary-sub;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $color-3;
+    display: block;
+    letter-spacing: 1.8rem;
+    border-bottom: 2px solid $color-3;
+    margin: 0 5rem;
+
+  }
+  &--card {
+    display: block;
+    font-family: $font-primary-heading;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    color: $color-4;
+  }
+}
+
+.heading{
+  padding-left: 5%;
+  position: relative;
+  &-feature {
+    font-family: $font-feature-heading;
+    font-size: 5rem;
+    font-weight: 300;
+    text-transform: capitalize;
+
+    &--fsub {
+      position: absolute;
+      top:3.5rem;
+      left:10%;
+      text-transform: lowercase;
+      font-family: $font-feature-sub;
+      font-size: 3rem;
+      font-weight: 100;
+      letter-spacing: .3rem;
+    }
+    &--home{ //home icon
+      position: absolute;
+      left:90%;
+      top:20%;
+      font-size: 5rem;
+      color: $color-4;
+    }
+  }
+}
+.page{
+  font-family: $font-feature-heading;
+  color: $color-3;
+
+  &--header{
+    // border-bottom: 1px solid $color-2;
+    padding: 1rem;
+    font-size: 5rem;
+    font-weight: 500;
+  }
+  &--row{
+    padding: 0;
+    border-bottom: 1px solid $color-2;
+    margin-right: 5rem;
+    font-size: 3rem;
+    font-weight: 300;
+
+    &-ol_item {
+      text-transform: capitalize;
+      font-family: $font-person;
+      // font-size: 3rem;
+      color: $color-3;
+      font-weight: 300;
+    }
+  }
+  &--text{
+    display: inline-block;
+    // border-bottom: 1px solid $color-2;
+    // padding: 1rem;
+
+    &-info{
+      // border-bottom: 1px solid $color-2;
+      color: $color-4;
+      display: inline-block;
+      font-family: $font-person;
+      padding-left: 2rem;
+    }
+  }
+}
+
+.nav--tag-text{
+  font-family: $font-tags;
+  font-size: 2.5rem;
+  font-weight: 100;
+  letter-spacing: .2rem;
+  color: $color-4;
+}
+
+.form--fieldname {
+  color: $color-4;
+  font-family: $font-form-fieldname;
+  font-size: 4rem;
+}

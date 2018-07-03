@@ -1,0 +1,28 @@
+.page{
+  border: 2px solid $color-3;
+  margin-top: 5px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: .8rem;
+  background-color: $color-white;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+  &--row{
+    display: block;
+    margin-left: 5rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    text-align: left;
+    &-ol{
+
+      &_item {
+        border-bottom: 1px solid $color-2;
+        padding: 1rem;
+      }
+    }
+
+
+  }
+
+
+}

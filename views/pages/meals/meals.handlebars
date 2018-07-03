@@ -1,0 +1,48 @@
+{{> _mealsNav}}
+
+
+
+<div class="form">
+
+
+<form class="form--add" action="/meals" method="post">
+
+  <div class="form--row error">
+    {{#each errors}}
+    <div class="error--box">
+      <div class="error--box-msg">
+        <p>{{text}}</p>
+      </div>
+    </div>
+    {{else}}
+    {{/each}}
+  </div>
+
+  <div class="form--row">
+    <label for="FoodEaten" class="form--fieldname">Food:
+      <select name="FoodEaten" class="form--input" >
+        <option value="" class="form--input">Select</option>
+        <option value="apple" class="form--input">Apple</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="form--row">
+    <input type="number" class="form--input" name="quantity" placeholder="Quantity">
+    <select name="formUOM" class="form--input">
+      <option value="ml" class="form--input">ml</option>
+      <option value="gram" class="form--input">g</option>
+      <option value="each" class="form--input">Each</option>
+    </select>
+  </div>
+
+  <div class="form--row">
+      <input type="datetime-local" name="date" class="form--input">
+  </div>
+
+  <div class="form--row">
+    <button type="submit" class="btn btn-submit">Submit</button>
+  </div>
+
+</form>
+</div>

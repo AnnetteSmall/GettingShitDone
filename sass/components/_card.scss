@@ -1,0 +1,30 @@
+.card {
+  display: inline-block;
+  border: 1px solid $color-2;
+  border-radius: 4px;
+  // height: 20vh;
+  width: 22vw;
+  margin-left: 7.5%;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+  background-color: $color-white;
+
+  &__icon {
+    font-size: 10rem;
+    text-align: center;
+    margin-top: 5%;
+    & i {
+      background-image: radial-gradient($color-2, $color-3);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+  }
+  &__header {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 4%;
+  }
+
+}

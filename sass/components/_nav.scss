@@ -1,0 +1,31 @@
+.nav {
+
+  &--feature {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    // border-bottom: 2px solid $color-3;
+    margin-bottom: -8px;
+    backface-visibility: hidden;
+  }
+  &--tag{
+    display: inline-block;
+    padding: 0 1rem;
+    background-color: $color-2;
+    border: 2px solid $color-3;
+    border-radius: 1rem 1rem 0 0;
+    margin-right: 3px;
+    box-shadow: 1.5rem 0 3rem rgba($color-black, .15);
+    background: radial-gradient($color-2 60%, $color-3);
+    &:active,
+    ::after,
+    :link,
+    :visited{
+      background: radial-gradient($color-1 70%, $color-2); //$color-1 70%, $color-2
+    }
+    &-text{
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+}

@@ -1,0 +1,15 @@
+.btn{
+  padding:1rem 3rem;
+  font-size: 4rem;
+  font-family: $font-handwriting-2;
+  border-radius: 2rem;
+  color: $color-5;
+  box-shadow: 1.5rem 1.5rem 2rem rgba($color-black, .15);
+  &-submit{
+    background: radial-gradient($color-1, $color-3);
+    color: $color-5;
+    font-weight: bold;
+    letter-spacing: .2rem;
+
+  }
+}

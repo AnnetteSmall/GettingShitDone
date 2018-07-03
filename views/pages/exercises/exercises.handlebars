@@ -1,0 +1,25 @@
+{{> _exerciseNav}}
+
+<div class="form ">
+  <form class="form--add" action="/exercises" method="post">
+    <div class="form--row error">
+      {{#each errors}}
+      <div class="error--box">
+        <div class="error--box-msg">
+          <p>{{text}}</p>
+        </div>
+      </div>
+      {{else}}
+      {{/each}}
+    </div>
+    <div class="form--row">
+      <input type="" class="form--input" name="name" placeholder="Name" required>
+    </div>
+    <div class="form--row">
+      <input type="datetime-local"  name="date" class="form--input" required>
+    </div>
+    <div class="form--row u-centre">
+      <button  class="btn btn-submit" type='submit' >Save</button>
+    </div>
+  </form>
+</div>

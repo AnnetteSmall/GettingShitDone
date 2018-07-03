@@ -1,0 +1,19 @@
+/* universal selector : to start on a blank canvase. make sure all starts are catred for */
+*,
+*::after,
+*::before{
+  margin:0;
+  padding:0;
+  box-sizing: inherit; /* once set on body => now specify that this needs to be inherited by child elements */
+}
+
+/* this is the root */
+html{
+  // define what 1 rem is
+  font-size: 62.5%; /* root size so we can use rem for the rest of the styles (default 16px) use % to allow user to still be able to increase font size*/
+}
+
+body{
+  box-sizing: border-box; /* this will not be inherited autmatically - needs to specify in univeral selector */
+  background-color: $color-1;
+}

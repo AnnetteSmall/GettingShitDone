@@ -1,0 +1,38 @@
+{{> _measurementsNav}}
+
+<div class="form ">
+  <form class="form--add" action="/measurements" method="post">
+    <div class="form--row error">
+      {{#each errors}}
+      <div class="error--box">
+        <div class="error--box-msg">
+          <p>{{text}}</p>
+        </div>
+      </div>
+      {{else}}
+      {{/each}}
+    </div>
+    <div class="form--row">
+      <label for="newMeasurement" class="form--fieldname">Body Area
+        <select name="newMeasurement" class="form--input">
+          <option name="newMeasurement"  value="" class="form--input">Select</option>
+          <option name="newMeasurement"  value="UpperArm" class="form--input">Upper Arm</option>
+          <option name="newMeasurement"  value="LowerArm" class="form--input">Lower Arm</option>
+          <option name="newMeasurement"  value="Chest" class="form--input">Chest</option>
+          <option name="newMeasurement"  value="Hips" class="form--input">Hips</option>
+          <option name="newMeasurement"  value="Thighs" class="form--input">Thighs</option>
+          <option name="newMeasurement"  value="Calves" class="form--input">Calves</option>
+        </select>
+      </label><br>
+    </div>
+    <div class="form--row">
+      <input type="number" class="form--input" name="measurement" placeholder="Measurement in cm" required>
+    </div>
+    <div class="form--row">
+      <input type="datetime-local"  name="date" class="form--input" required>
+    </div>
+    <div class="form--row u-centre">
+      <button  class="btn btn-submit" type='submit' >Save</button>
+    </div>
+  </form>
+</div>

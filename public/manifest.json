@@ -1,0 +1,50 @@
+{
+  "name": "LifeCoach",
+  "short_name": "LC",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#F6F4F6",
+  "description": "Manage your life",
+  "dir": "ltr",
+  "lang": "en-US",
+  "orientation": "portrait-primary",
+  "icons": [{
+    "src": "/src/images/icons/LC48",
+    "type": "image/png",
+    "sizes": "48x48"
+  }, {
+    "src": "/src/images/icons/LC72",
+    "type": "image/png",
+    "sizes": "72x72"
+  }, {
+    "src": "/src/images/icons/LC96",
+    "type": "image/png",
+    "sizes": "96x96"
+  }, {
+    "src": "/src/images/icons/LC144",
+    "type": "image/png",
+    "sizes": "144x144"
+  }, {
+    "src": "/src/images/icons/LC168",
+    "type": "image/png",
+    "sizes": "168x168"
+  }, {
+    "src": "/src/images/icons/LC192",
+    "type": "image/png",
+    "sizes": "192x192"
+  }, {
+    "src": "/src/images/icons/LC256",
+    "type": "image/png",
+    "sizes": "256x256"
+  }, {
+    "src": "/src/images/icons/LC384",
+    "type": "image/png",
+    "sizes": "384x384"
+  }, {
+    "src": "/src/images/icons/LC512",
+    "type": "image/png",
+    "sizes": "512x512"
+  }]
+
+}

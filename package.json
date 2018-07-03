@@ -1,12 +1,17 @@
 {
-  "name": "node-authentication",
+  "name": "GettingShitDone",
   "main": "server.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss public/css/master.css -w"
+  },
   "dependencies": {
     "body-parser": "~1.15.2",
     "cors": "^2.8.4",
     "express": "~4.14.0",
+    "express-handlebars": "^3.0.0",
     "fatsecret": "~1.0.2",
     "mongoose": "~4.13.1",
+    "node-sass": "^4.9.0",
     "request-promise": "~4.2.2"
   }
 }
